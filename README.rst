@@ -18,12 +18,17 @@ Example
 		md_analysis_light("PATH_READ.xyz","PATH_WRITE.xyz")
 =======
 * To analyze a .extxyz trajectory with a constant number of atoms and no change in indexing, import the (:code:`md_analysis_light`) routine::
+	
 .. code:: python
 
-	from lshiftml.models import md_analysis_light
+		from lshiftml.models import md_analysis_light
 	
+<<<<<<< HEAD
 	md_analysis_light("PATH_READ.xyz","PATH_WRITE.xyz")
 >>>>>>> 0514563... Update README.rst
+=======
+		md_analysis_light("PATH_READ.xyz","PATH_WRITE.xyz")
+>>>>>>> 20da2f4... Update README.rst
   
 
 Install notes
