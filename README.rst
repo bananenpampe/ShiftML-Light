@@ -20,7 +20,7 @@ Example
 Install notes
 =============
 
-* Clone this repository, change into the git repository and then install via pip::
+* Clone this repository, change into the git directory and then install via pip::
 
 	git clone <link>
 	cd <./cloned_repository>
