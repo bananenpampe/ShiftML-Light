@@ -8,7 +8,7 @@ ShiftML-Light
 Example
 =======
 
-* To analyze a .extxyz trajectory with a constant number of atoms and no change in indexing, import the (:code:`md_analysis_light`) routine, the predicted shifts will be written to the column (:code:`cs_iso`)::
+* To analyze a .extxyz trajectory with a constant number of atoms and no change in indexing, import the (:code:`md_analysis_light`) routine, the predicted shifts will be written to the column :code:`cs_iso`::
 	
 .. code:: python
 
