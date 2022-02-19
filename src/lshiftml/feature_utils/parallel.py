@@ -23,3 +23,6 @@ def get_features_in_parallel(frames,calculator,hypers,blocksize=25,n_cores=-1):
         results = Parallel(n_jobs=n_cores)(delayed(get_features)(frame, calculator, hypers) for frame in grouper(blocksize,frames))
     
     return np.concatenate(results)
+
+if __name__ == "__main__":
+    pass

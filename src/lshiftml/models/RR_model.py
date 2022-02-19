@@ -18,7 +18,7 @@ def load_frames(READPATH):
     return frames
 
 
-def small_model(READPATH,WRITEPATH,fit_species=None,nthreads=-1,prop_string="cs_iso"):
+def md_analysis_light(READPATH,WRITEPATH,fit_species=None,nthreads=-1,prop_string="cs_iso"):
     
     trajframes =  load_frames(READPATH)  
    
@@ -47,6 +47,7 @@ def small_model(READPATH,WRITEPATH,fit_species=None,nthreads=-1,prop_string="cs_
         return
     
     if fit_species is None:
+        
         fit_species = list(species)
         
     if not set(fit_species).issubset(species):
@@ -55,6 +56,7 @@ def small_model(READPATH,WRITEPATH,fit_species=None,nthreads=-1,prop_string="cs_
     
     
     for specie in fit_species:
+        
         fit_frames = deepcopy(trajframes)
 
         for frame in fit_frames: mask_center_atoms_by_species(frame,[int(specie)]) 

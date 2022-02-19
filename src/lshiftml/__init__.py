@@ -1,3 +1,3 @@
-__all__ = ["small_model", "helpers", "feature_utils"]
+__all__ = ["models", "helpers", "feature_utils"]
 
 __version__ = "0.0.0"

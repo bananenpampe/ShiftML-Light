@@ -11,3 +11,6 @@ def grouper(n, iterable):
         if not chunk:
             return
         yield chunk
+        
+if __name__ == "__main__":
+    pass
