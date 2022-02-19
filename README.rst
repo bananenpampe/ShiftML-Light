@@ -9,6 +9,7 @@ Example
 =======
 
 * To analyze a .extxyz trajectory with a constant number of atoms and no change in indexing, import the (:code:`md_analysis_light`) routine::
+.. code:: python
 
 	from lshiftml.models import md_analysis_light
 	
