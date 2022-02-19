@@ -8,6 +8,7 @@ ShiftML-Light
 Example
 =======
 
+<<<<<<< HEAD
 * To analyze a .extxyz trajectory with a constant number of atoms and no change in indexing, import the (:code:`md_analysis_light`) routine, the predicted shifts will be written to the column :code:`cs_iso`::
 	
 .. code:: python
@@ -15,6 +16,11 @@ Example
 		from lshiftml.models import md_analysis_light
 	
 		md_analysis_light("PATH_READ.xyz","PATH_WRITE.xyz")
+=======
+* To analyze a .extxyz trajectory with a constant number of atoms and no change in indexing, import the (:code:`md_analysis_light`) routine::
+
+	md_analysis_light("PATH_READ.xyz","PATH_WRITE.xyz")
+>>>>>>> 0514563... Update README.rst
   
 
 Install notes
