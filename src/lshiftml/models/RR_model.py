@@ -1,7 +1,7 @@
 from ase.io import read, write
 from rascal.neighbourlist.structure_manager import mask_center_atoms_by_species
 from rascal.representations import SphericalInvariants as SOAP
-from feature_utils.parallel import get_features_in_parallel
+from lshiftml.feature_utils.parallel import get_features_in_parallel
 import json 
 from joblib import load
 import numpy as np
