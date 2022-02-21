@@ -1,5 +1,5 @@
 from joblib import Parallel, delayed, parallel_backend
-from lshiftml.helpers import grouper
+from lshiftml.helpers.helpers import grouper
 from copy import deepcopy
 import numpy as np
 import time
