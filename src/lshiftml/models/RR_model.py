@@ -7,6 +7,7 @@ from joblib import load
 import numpy as np
 from copy import deepcopy
 from pathlib import Path
+import os
 
 model_fitted_for_species = set([1,6,7,8,16])
 
@@ -61,15 +62,15 @@ def md_analysis_light(READPATH,WRITEPATH,fit_species=None,nthreads=-1,prop_strin
 
         for frame in fit_frames: mask_center_atoms_by_species(frame,[int(specie)]) 
 
+        BASE_PATH = Path(os.path.dirname(os.path.abspath(__file__))).parent.parent.parent
+        HYPERS_PATH = os.path.join(BASE_PATH, "data/RR_this_work_models/hypers/", "{}_hypers.json".format(specie))
+        MODEL_PATH = os.path.join(BASE_PATH, "data/RR_this_work_models/", "{}_RR.joblib".format(specie))
         
-        path_hyp = Path(__file__).parent.parent.parent.parent / "./data/RR_this_work_models/hypers/{}_hypers.json".format(specie)
-        path_model =  Path(__file__).parent.parent.parent.parent / "./data/RR_this_work_models/{}_RR.joblib".format(specie)
-        
-        with open(path_hyp) as f:
+        with open(HYPERS_PATH) as f:
             hypers = json.load(f)
         
         
-        model = load(path_model)
+        model = load(MODEL_PATH)
         Xpredict = get_features_in_parallel(fit_frames,SOAP,hypers,n_cores=nthreads)
 
         Ypred = model.predict(Xpredict)
