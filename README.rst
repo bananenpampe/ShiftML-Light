@@ -21,7 +21,8 @@ Example
 Install notes
 =============
 
-* Clone this repository, change into the git directory and then install via pip::
+* Clone this repository, change into the git directory and then install via pip
+(for now pip install -e . , because I havent added the data path) ::
 
 	git clone <link>
 	cd <./cloned_repository>
