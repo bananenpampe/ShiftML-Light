@@ -25,7 +25,7 @@ Install notes
 
 	git clone <link>
 	cd <./cloned_repository>
-	pip install . 
+	pip install -e . 
 
 Citations
 =========
